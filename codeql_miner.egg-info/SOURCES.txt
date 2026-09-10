@@ -1,6 +1,14 @@
+README.md
 pyproject.toml
 codeql_miner.egg-info/PKG-INFO
 codeql_miner.egg-info/SOURCES.txt
 codeql_miner.egg-info/dependency_links.txt
 codeql_miner.egg-info/requires.txt
 codeql_miner.egg-info/top_level.txt
+miner/cloner.py
+miner/codeql.py
+miner/github.py
+miner/main.py
+miner/models.py
+miner/parser.py
+tests/test_models.py

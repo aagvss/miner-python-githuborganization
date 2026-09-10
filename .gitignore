@@ -1,4 +1,26 @@
-venv/
-__pycache__/
+### Credenciales y Entornos (¡Crítico!) ###
 .env
+venv/
+env/
+
+### Archivos de Python ###
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+### Artefactos de CodeQL y Clonación ###
+*-codeql-db/
+*.sarif
+*.bqrs
+/temp/
+/repos/
+
+### Resultados Generados ###
+resultados.json
 *.json
+
+### Editores y Sistemas Operativos ###
+.vscode/
+.DS_Store
