@@ -20,7 +20,7 @@ def scan(organization: str = typer.Option(..., "--organization"), output: Path =
     token = os.environ.get("GITHUB_TOKEN")
     if not token: raise typer.Exit(code=1)
 
-    repos_data = get_organization_repositories(organization, token)[:10] # Límite de 10
+    repos_data = get_organization_repositories(organization, token) # Límite de 10
     
     # Inicializamos modelos Pydantic
     summary = Summary(repositories=len(repos_data))
